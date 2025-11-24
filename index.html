@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Music Sheet Library</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">Music Sheet Library</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto me-3">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Songs</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#english">English</a></li>
+            <li><a class="dropdown-item" href="#malayalam">Malayalam</a></li>
+            <li><a class="dropdown-item" href="#hindi">Hindi</a></li>
+            <li><a class="dropdown-item" href="#tamil">Tamil</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      </ul>
+
+      <!-- Search Bar -->
+      <form id="searchForm" class="d-flex" onsubmit="return false;">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search songs..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<section id="home" class="mt-5 pt-5">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Photos/English.png" class="d-block w-100" alt="English Songs">
+      </div>
+      <div class="carousel-item">
+        <img src="Photos/Malayalam.png" class="d-block w-100" alt="Malayalam Songs">
+      </div>
+      <div class="carousel-item">
+        <img src="Photos/Hindi.png" class="d-block w-100" alt="Hindi Songs">
+      </div>
+      <div class="carousel-item">
+        <img src="Photos/Tamil.png" class="d-block w-100" alt="Tamil Songs">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- English Songs -->
+<section id="english" class="songs-section py-5">
+  <div class="container text-center">
+    <h2>English Songs</h2>
+    <div class="row justify-content-center mt-4" id="englishSongs">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Believer.png" class="card-img-top" alt="Believer">
+          <div class="card-body">
+            <h5 class="card-title">Believer</h5>
+            <a href="English/Believer.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="English/Believer.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Bella.png" class="card-img-top" alt="Bella Ciao">
+          <div class="card-body">
+            <h5 class="card-title">Bella Ciao</h5>
+            <a href="English/Bella.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="English/Bella.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Shape.png" class="card-img-top" alt="Shape of You">
+          <div class="card-body">
+            <h5 class="card-title">Shape Of You</h5>
+            <a href="English/ShapeOfYou.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="English/ShapeOfYou.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Dance.png" class="card-img-top" alt="Dance Monkey">
+          <div class="card-body">
+            <h5 class="card-title">Dance Monkey</h5>
+            <a href="English/Dance.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="English/Dance.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Malayalam Songs -->
+<section id="malayalam" class="songs-section py-5">
+  <div class="container text-center">
+    <h2>Malayalam Songs</h2>
+    <div class="row justify-content-center mt-4" id="malayalamSongs">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Angu.png" class="card-img-top" alt="Angu Vaana Konilu">
+          <div class="card-body">
+            <h5 class="card-title">Angu Vaana Konilu</h5>
+            <a href="Malayalam/Angu.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Malayalam/Angu.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Manasin.png" class="card-img-top" alt="Manasin Madiyile">
+          <div class="card-body">
+            <h5 class="card-title">Manasin Madiyile</h5>
+            <a href="Malayalam/Manasin.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Malayalam/Manasin.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/MinnalVala.png" class="card-img-top" alt="Minnal Vala">
+          <div class="card-body">
+            <h5 class="card-title">Minnalvala</h5>
+            <a href="Malayalam/Minnalvala.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Malayalam/Minnalvala.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Neela.png" class="card-img-top" alt="Neela Nilave">
+          <div class="card-body">
+            <h5 class="card-title">Neela Nilave</h5>
+            <a href="Malayalam/Neela.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Malayalam/Neela.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hindi Songs -->
+<section id="hindi" class="songs-section py-5">
+  <div class="container text-center">
+    <h2>Hindi Songs</h2>
+    <div class="row justify-content-center mt-4" id="hindiSongs">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Hawayein.png" class="card-img-top" alt="Hawayein">
+          <div class="card-body">
+            <h5 class="card-title">Hawayein</h5>
+            <a href="Hindi/Hawayein.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Hindi/Hawayein.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Jab.png" class="card-img-top" alt="Jab We Met">
+          <div class="card-body">
+            <h5 class="card-title">Jab We Met</h5>
+            <a href="Hindi/Jab.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Hindi/Jab.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Mere.png" class="card-img-top" alt="Mere Sapno Ki">
+          <div class="card-body">
+            <h5 class="card-title">Mere Sapno Ki</h5>
+            <a href="Hindi/Mere.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Hindi/Mere.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Mukkala.png" class="card-img-top" alt="Mukkala Mukkabla">
+          <div class="card-body">
+            <h5 class="card-title">Mukkala Mukkabla</h5>
+            <a href="Hindi/Mukkala.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Hindi/Mukkala.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tamil Songs -->
+<section id="tamil" class="songs-section py-5">
+  <div class="container text-center">
+    <h2>Tamil Songs</h2>
+    <div class="row justify-content-center mt-4" id="tamilSongs">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Anjali.png" class="card-img-top" alt="Anjali Anjali">
+          <div class="card-body">
+            <h5 class="card-title">Anjali Anjali</h5>
+            <a href="Tamil/Anjali.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Tamil/Anjali.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Dandalayya.png" class="card-img-top" alt="Dandalayya">
+          <div class="card-body">
+            <h5 class="card-title">Dandalayya</h5>
+            <a href="Tamil/Dandalaya.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Tamil/Dandalaya.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Kannana.png" class="card-img-top" alt="Kannana Kanne">
+          <div class="card-body">
+            <h5 class="card-title">Kannana Kanne</h5>
+            <a href="Tamil/Kannana.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Tamil/Kannana.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 song-card-item">
+        <div class="card song-card">
+          <img src="Photos/Maruvaarthai.png" class="card-img-top" alt="Maruvaarthai">
+          <div class="card-body">
+            <h5 class="card-title">Maruvaarthai</h5>
+            <a href="Tamil/Maruvaarthai.pdf" target="_blank" class="btn btn-primary btn-sm">View</a>
+            <a href="Tamil/Maruvaarthai.pdf" download class="btn btn-success btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container w-50 mx-auto">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form id="contactForm">
+  <input type="text" id="name" placeholder="Your Name" class="form-control mb-3" required>
+  <input type="email" id="email" placeholder="Your Email" class="form-control mb-3" required>
+  <input type="text" id="number" placeholder="Phone Number" class="form-control mb-3" required>
+  <button type="submit" class="btn btn-primary w-100">Submit</button>
+</form>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container text-center">
+    <img src="Photos/samin.jpeg" alt="Samin Samuel" class="about-img mb-3">
+    <h3>Samin Samuel</h3>
+    <p class="w-75 mx-auto">
+      I am a dedicated Music Instructor from Kerala, India, with over 15 years of experience.
+      I specialize in teaching Piano, Keyboard, Guitar, and Drums. My goal is to make learning music enjoyable and accessible for everyone.
+    </p>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
